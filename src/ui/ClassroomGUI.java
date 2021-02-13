@@ -230,6 +230,10 @@ public class ClassroomGUI {
     		create = false;
     		emptyAlert.setContentText("Password is missing");
     		emptyAlert.showAndWait();		
+    	}else if(txtImageRoute.getText().isEmpty()) {
+    		create = false;
+    		emptyAlert.setContentText("Profile Photo is missing");
+    		emptyAlert.showAndWait();
     	}else if(genderSelect.getSelectedToggle() ==null) {
     		create = false;
     		emptyAlert.setContentText("Gender is missing");
