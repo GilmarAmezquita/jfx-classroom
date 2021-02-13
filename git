@@ -1,0 +1,581 @@
+warning: LF will be replaced by CRLF in bin/ui/main-pane.fxml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bin/ui/register.fxml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/ui/main-pane.fxml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/ui/register.fxml.
+The file will have its original line endings in your working directory
+[1mdiff --git a/bin/ui/ClassroomGUI.class b/bin/ui/ClassroomGUI.class[m
+[1mindex e2ba2d4..c66a72b 100644[m
+Binary files a/bin/ui/ClassroomGUI.class and b/bin/ui/ClassroomGUI.class differ
+[1mdiff --git a/bin/ui/Main.class b/bin/ui/Main.class[m
+[1mindex 99547f4..d296ef4 100644[m
+Binary files a/bin/ui/Main.class and b/bin/ui/Main.class differ
+[1mdiff --git a/bin/ui/main-pane.fxml b/bin/ui/main-pane.fxml[m
+[1mindex 4d6ba56..27b0b38 100644[m
+[1m--- a/bin/ui/main-pane.fxml[m
+[1m+++ b/bin/ui/main-pane.fxml[m
+[36m@@ -1,46 +1,10 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ [m
+[31m-<?import javafx.geometry.Insets?>[m
+[31m-<?import javafx.scene.control.Button?>[m
+[31m-<?import javafx.scene.control.Label?>[m
+ <?import javafx.scene.layout.BorderPane?>[m
+[31m-<?import javafx.scene.layout.ColumnConstraints?>[m
+[31m-<?import javafx.scene.layout.GridPane?>[m
+[31m-<?import javafx.scene.layout.RowConstraints?>[m
+ <?import javafx.scene.layout.VBox?>[m
+[31m-<?import javafx.scene.text.Font?>[m
+ [m
+[31m-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+[32m+[m[32m<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+    <children>[m
+[31m-      <BorderPane fx:id="mainPanel" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">[m
+[31m-         <center>[m
+[31m-            <GridPane BorderPane.alignment="CENTER">[m
+[31m-              <columnConstraints>[m
+[31m-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />[m
+[31m-              </columnConstraints>[m
+[31m-              <rowConstraints>[m
+[31m-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />[m
+[31m-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />[m
+[31m-              </rowConstraints>[m
+[31m-               <children>[m
+[31m-                  <Label text="Welcome To the Classroom App" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">[m
+[31m-                     <font>[m
+[31m-                        <Font name="System Bold Italic" size="18.0" />[m
+[31m-                     </font>[m
+[31m-                  </Label>[m
+[31m-                  <Button mnemonicParsing="false" onAction="#showScreenSignUp" prefWidth="70.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Sign Up" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">[m
+[31m-                     <GridPane.margin>[m
+[31m-                        <Insets right="80.0" />[m
+[31m-                     </GridPane.margin>[m
+[31m-                  </Button>[m
+[31m-                  <Button mnemonicParsing="false" onAction="#showScreenLogIn" prefWidth="70.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Log In" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">[m
+[31m-                     <GridPane.margin>[m
+[31m-                        <Insets left="80.0" />[m
+[31m-                     </GridPane.margin>[m
+[31m-                  </Button>[m
+[31m-               </children>[m
+[31m-            </GridPane>[m
+[31m-         </center>[m
+[31m-      </BorderPane>[m
+[32m+[m[32m      <BorderPane fx:id="mainPanel" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />[m
+    </children>[m
+ </VBox>[m
+[1mdiff --git a/bin/ui/register.fxml b/bin/ui/register.fxml[m
+[1mindex 7f50002..bafe227 100644[m
+[1m--- a/bin/ui/register.fxml[m
+[1m+++ b/bin/ui/register.fxml[m
+[36m@@ -16,7 +16,7 @@[m
+ <?import javafx.scene.layout.VBox?>[m
+ <?import javafx.scene.text.Font?>[m
+ [m
+[31m-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+[32m+[m[32m<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+    <children>[m
+       <GridPane VBox.vgrow="ALWAYS">[m
+         <columnConstraints>[m
+[36m@@ -35,85 +35,57 @@[m
+             </Label>[m
+             <Label text="Username:" GridPane.rowIndex="1" GridPane.valignment="CENTER">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="180.0" left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="220.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Password:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="120.0" left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="160.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Profile Photo:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="60.0" left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="100.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Gender:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Career:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" top="60.0" />[m
+[32m+[m[32m                  <Insets left="50.0" top="20.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Birthday:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" top="120.0" />[m
+[32m+[m[32m                  <Insets left="50.0" top="160.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Favorite Browser:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" top="180.0" />[m
+[32m+[m[32m                  <Insets left="50.0" top="220.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+[31m-            <Button mnemonicParsing="false" onAction="#showScreenLogIn" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Log In" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets right="80.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </Button>[m
+[31m-            <Button mnemonicParsing="false" onAction="#accountCreate" prefWidth="100.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Create Account" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets left="80.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </Button>[m
+[31m-            <DatePicker fx:id="txtBirthday" GridPane.rowIndex="1">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets left="150.0" top="120.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </DatePicker>[m
+             <TextField fx:id="txtUsernameSignIn" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="180.0" left="150.0" right="150.0" />[m
+[32m+[m[32m                  <Insets bottom="220.0" left="150.0" right="150.0" />[m
+                </GridPane.margin>[m
+             </TextField>[m
+             <PasswordField fx:id="txtPasswordSignIn" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="120.0" left="150.0" right="150.0" />[m
+[32m+[m[32m                  <Insets bottom="160.0" left="150.0" right="150.0" />[m
+                </GridPane.margin>[m
+             </PasswordField>[m
+             <TextField fx:id="txtImageRoute" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="60.0" left="150.0" right="150.0" />[m
+[32m+[m[32m                  <Insets bottom="100.0" left="150.0" right="150.0" />[m
+                </GridPane.margin>[m
+             </TextField>[m
+[31m-            <Button mnemonicParsing="false" onAction="#browseImageRoute" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Browse" textFill="WHITE" GridPane.rowIndex="1">[m
+[31m-               <opaqueInsets>[m
+[31m-                  <Insets />[m
+[31m-               </opaqueInsets>[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets bottom="60.0" left="325.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </Button>[m
+[31m-            <ChoiceBox fx:id="cbFavoriteBrowser" prefWidth="150.0" GridPane.rowIndex="1">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets left="150.0" top="180.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </ChoiceBox>[m
+             <RadioButton mnemonicParsing="false" text="Male" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="150.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="150.0" />[m
+                </GridPane.margin>[m
+                <toggleGroup>[m
+                   <ToggleGroup fx:id="genderSelect" />[m
+[36m@@ -121,19 +93,57 @@[m
+             </RadioButton>[m
+             <RadioButton mnemonicParsing="false" text="Female" toggleGroup="$genderSelect" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="220.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="220.0" />[m
+                </GridPane.margin>[m
+             </RadioButton>[m
+             <RadioButton mnemonicParsing="false" text="Other" toggleGroup="$genderSelect" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="290.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="290.0" />[m
+                </GridPane.margin>[m
+             </RadioButton>[m
+[31m-            <CheckBox mnemonicParsing="false" text="Software System Engenierie" GridPane.rowIndex="1">[m
+[32m+[m[32m            <CheckBox mnemonicParsing="false" text="Software Engineering" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="20.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </CheckBox>[m
+[32m+[m[32m            <DatePicker fx:id="txtBirthday" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="160.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </DatePicker>[m
+[32m+[m[32m            <ChoiceBox fx:id="cbFavoriteBrowser" prefWidth="150.0" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="220.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </ChoiceBox>[m
+[32m+[m[32m            <Button mnemonicParsing="false" onAction="#browseImageRoute" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Browse" textFill="WHITE" GridPane.rowIndex="1">[m
+[32m+[m[32m               <opaqueInsets>[m
+[32m+[m[32m                  <Insets />[m
+[32m+[m[32m               </opaqueInsets>[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets bottom="100.0" left="325.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </Button>[m
+[32m+[m[32m            <Button mnemonicParsing="false" onAction="#showScreenLogIn" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Log In" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets right="80.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </Button>[m
+[32m+[m[32m            <Button mnemonicParsing="false" onAction="#accountCreate" prefWidth="100.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Create Account" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="80.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </Button>[m
+[32m+[m[32m            <CheckBox mnemonicParsing="false" text="Telematic Engineering" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+                   <Insets left="150.0" top="60.0" />[m
+                </GridPane.margin>[m
+             </CheckBox>[m
+[32m+[m[32m            <CheckBox mnemonicParsing="false" text="Industrial Engineering" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="100.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </CheckBox>[m
+          </children>[m
+       </GridPane>[m
+    </children>[m
+[1mdiff --git a/src/ui/ClassroomGUI.java b/src/ui/ClassroomGUI.java[m
+[1mindex 5ac9496..b3b38ec 100644[m
+[1m--- a/src/ui/ClassroomGUI.java[m
+[1m+++ b/src/ui/ClassroomGUI.java[m
+[36m@@ -47,10 +47,10 @@[m [mpublic class ClassroomGUI {[m
+     [m
+ 	private Classroom classroom;[m
+     [m
+[31m-	public ClassroomGUI(Classroom classroom) {[m
+[32m+[m	[32mpublic ClassroomGUI(Classroom classroom){[m
+ 		this.classroom = classroom;[m
+ 	}[m
+[31m-	[m
+[32m+[m[41m    [m
+     @FXML[m
+     public void showScreenLogIn(ActionEvent event) throws IOException {[m
+     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));[m
+[36m@@ -105,19 +105,21 @@[m [mpublic class ClassroomGUI {[m
+     }[m
+ [m
+     @FXML[m
+[31m-    public void accountCreate(ActionEvent event) {[m
+[31m-    	boolean createAcc = checkFormEmpty();[m
+[32m+[m[32m    public void accountCreate(ActionEvent event) throws IOException {[m
+[32m+[m[41m    [m	[32mboolean createAcc = checkForEmpty();[m
+[32m+[m[41m    [m	[32mboolean created = false;[m
+     	if(createAcc) {[m
+     		String username = txtUsernameSignIn.getText();[m
+     		String password = txtPasswordSignIn.getText();[m
+     		String gender = ((RadioButton) genderSelect.getSelectedToggle()).getText();[m
+     		String birthday = txtBirthday.getValue().toString();[m
+     		String browser = cbFavoriteBrowser.getValue().toString();[m
+[31m-    		classroom.createAccount(username, password, null, null, birthday, browser);[m
+[32m+[m[41m    [m		[32mcreated = classroom.createAccount(username, password, gender, null, birthday, browser);[m
+[32m+[m[41m    [m		[32malertAccount(created);[m
+     	}[m
+     }[m
+     [m
+[31m-    private boolean checkFormEmpty() {[m
+[32m+[m[32m    private boolean checkForEmpty() {[m
+     	boolean create = true;[m
+     	Alert emptyAlert  =new Alert(AlertType.INFORMATION);[m
+     	emptyAlert.setTitle("Missing Information");[m
+[36m@@ -126,14 +128,43 @@[m [mpublic class ClassroomGUI {[m
+     		create = false;[m
+     		emptyAlert.setContentText("Username is missing");[m
+     		emptyAlert.showAndWait();[m
+[31m-    	}else if() {[m
+[31m-    		[m
+[32m+[m[41m    [m	[32m}else if(txtPasswordSignIn.getText().isEmpty()) {[m
+[32m+[m[41m    [m		[32mcreate = false;[m
+[32m+[m[41m    [m		[32memptyAlert.setContentText("Password is missing");[m
+[32m+[m[41m    [m		[32memptyAlert.showAndWait();[m[41m		[m
+[32m+[m[41m    [m	[32m}else if(genderSelect.getSelectedToggle() ==null) {[m
+[32m+[m[41m    [m		[32mcreate = false;[m
+[32m+[m[41m    [m		[32memptyAlert.setContentText("Gender is missing");[m
+[32m+[m[41m    [m		[32memptyAlert.showAndWait();[m
+[32m+[m[41m    [m	[32m}else if(txtBirthday.getValue() == null) {[m
+[32m+[m[41m    [m		[32mcreate = false;[m
+[32m+[m[41m    [m		[32memptyAlert.setContentText("Birthday is missing");[m
+[32m+[m[41m    [m		[32memptyAlert.showAndWait();[m
+[32m+[m[41m    [m	[32m}else if(cbFavoriteBrowser.getValue() == null) {[m
+[32m+[m[41m    [m		[32mcreate = false;[m
+[32m+[m[41m    [m		[32memptyAlert.setContentText("Favorite Browser is missing");[m
+[32m+[m[41m    [m		[32memptyAlert.showAndWait();[m
+     	}[m
+     	return create;[m
+     }[m
+[32m+[m[41m    [m
+[32m+[m[32m    private void alertAccount(boolean created) throws IOException{[m
+[32m+[m[41m    [m	[32mAlert alertCreated = new Alert(AlertType.INFORMATION);[m
+[32m+[m[41m    [m	[32malertCreated.setHeaderText(null);[m
+[32m+[m[41m    [m	[32mif(created) {[m
+[32m+[m[41m    [m		[32malertCreated.setTitle("Account created");[m
+[32m+[m[41m    [m		[32malertCreated.setContentText("The new account has been created");[m
+[32m+[m[41m    [m		[32mshowScreenLogIn(null);[m
+[32m+[m[41m    [m	[32m}else {[m
+[32m+[m[41m    [m		[32malertCreated.setTitle("Validation Error");[m
+[32m+[m[41m    [m		[32malertCreated.setContentText("Username Already exist");[m
+[32m+[m[41m    [m		[32mtxtPasswordSignIn.setText(null);[m
+[32m+[m[41m    [m	[32m}[m
+[32m+[m[41m    [m	[32malertCreated.showAndWait();[m
+[32m+[m[32m    }[m
+ [m
+     @FXML[m
+[31m-    void browseImageRoute(ActionEvent event) {[m
+[32m+[m[32m    public void browseImageRoute(ActionEvent event) {[m
+ [m
+     }[m
+ }[m
+[1mdiff --git a/src/ui/Main.java b/src/ui/Main.java[m
+[1mindex 1d8a305..b6516b0 100644[m
+[1m--- a/src/ui/Main.java[m
+[1m+++ b/src/ui/Main.java[m
+[36m@@ -12,17 +12,13 @@[m [mimport model.Classroom;[m
+ public class Main extends Application {[m
+ 	private ClassroomGUI classroomGUI;[m
+ 	private Classroom classroom;[m
+[31m-	[m
+ 	public Main() {[m
+ 		classroom = new Classroom();[m
+ 		classroomGUI = new ClassroomGUI(classroom);[m
+ 	}[m
+[31m-	[m
+[31m-	[m
+ 	public static void main(String[] args) {[m
+ 		launch(args);[m
+ 	}[m
+[31m-	[m
+ 	@Override[m
+ 	public void start(Stage primaryStage) throws IOException {[m
+ 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-pane.fxml"));[m
+[36m@@ -33,5 +29,6 @@[m [mpublic class Main extends Application {[m
+ 		primaryStage.setTitle("Classroom");[m
+ 		primaryStage.setResizable(false);[m
+ 		primaryStage.show();[m
+[32m+[m		[32mclassroomGUI.showScreenLogIn(null);[m
+ 	}[m
+ }[m
+[1mdiff --git a/src/ui/main-pane.fxml b/src/ui/main-pane.fxml[m
+[1mindex 4d6ba56..27b0b38 100644[m
+[1m--- a/src/ui/main-pane.fxml[m
+[1m+++ b/src/ui/main-pane.fxml[m
+[36m@@ -1,46 +1,10 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ [m
+[31m-<?import javafx.geometry.Insets?>[m
+[31m-<?import javafx.scene.control.Button?>[m
+[31m-<?import javafx.scene.control.Label?>[m
+ <?import javafx.scene.layout.BorderPane?>[m
+[31m-<?import javafx.scene.layout.ColumnConstraints?>[m
+[31m-<?import javafx.scene.layout.GridPane?>[m
+[31m-<?import javafx.scene.layout.RowConstraints?>[m
+ <?import javafx.scene.layout.VBox?>[m
+[31m-<?import javafx.scene.text.Font?>[m
+ [m
+[31m-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+[32m+[m[32m<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+    <children>[m
+[31m-      <BorderPane fx:id="mainPanel" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">[m
+[31m-         <center>[m
+[31m-            <GridPane BorderPane.alignment="CENTER">[m
+[31m-              <columnConstraints>[m
+[31m-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />[m
+[31m-              </columnConstraints>[m
+[31m-              <rowConstraints>[m
+[31m-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />[m
+[31m-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />[m
+[31m-              </rowConstraints>[m
+[31m-               <children>[m
+[31m-                  <Label text="Welcome To the Classroom App" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">[m
+[31m-                     <font>[m
+[31m-                        <Font name="System Bold Italic" size="18.0" />[m
+[31m-                     </font>[m
+[31m-                  </Label>[m
+[31m-                  <Button mnemonicParsing="false" onAction="#showScreenSignUp" prefWidth="70.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Sign Up" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">[m
+[31m-                     <GridPane.margin>[m
+[31m-                        <Insets right="80.0" />[m
+[31m-                     </GridPane.margin>[m
+[31m-                  </Button>[m
+[31m-                  <Button mnemonicParsing="false" onAction="#showScreenLogIn" prefWidth="70.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Log In" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">[m
+[31m-                     <GridPane.margin>[m
+[31m-                        <Insets left="80.0" />[m
+[31m-                     </GridPane.margin>[m
+[31m-                  </Button>[m
+[31m-               </children>[m
+[31m-            </GridPane>[m
+[31m-         </center>[m
+[31m-      </BorderPane>[m
+[32m+[m[32m      <BorderPane fx:id="mainPanel" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />[m
+    </children>[m
+ </VBox>[m
+[1mdiff --git a/src/ui/register.fxml b/src/ui/register.fxml[m
+[1mindex 7f50002..bafe227 100644[m
+[1m--- a/src/ui/register.fxml[m
+[1m+++ b/src/ui/register.fxml[m
+[36m@@ -16,7 +16,7 @@[m
+ <?import javafx.scene.layout.VBox?>[m
+ <?import javafx.scene.text.Font?>[m
+ [m
+[31m-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+[32m+[m[32m<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">[m
+    <children>[m
+       <GridPane VBox.vgrow="ALWAYS">[m
+         <columnConstraints>[m
+[36m@@ -35,85 +35,57 @@[m
+             </Label>[m
+             <Label text="Username:" GridPane.rowIndex="1" GridPane.valignment="CENTER">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="180.0" left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="220.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Password:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="120.0" left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="160.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Profile Photo:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="60.0" left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="100.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Gender:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="50.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Career:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" top="60.0" />[m
+[32m+[m[32m                  <Insets left="50.0" top="20.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Birthday:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" top="120.0" />[m
+[32m+[m[32m                  <Insets left="50.0" top="160.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+             <Label text="Favorite Browser:" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="50.0" top="180.0" />[m
+[32m+[m[32m                  <Insets left="50.0" top="220.0" />[m
+                </GridPane.margin>[m
+             </Label>[m
+[31m-            <Button mnemonicParsing="false" onAction="#showScreenLogIn" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Log In" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets right="80.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </Button>[m
+[31m-            <Button mnemonicParsing="false" onAction="#accountCreate" prefWidth="100.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Create Account" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets left="80.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </Button>[m
+[31m-            <DatePicker fx:id="txtBirthday" GridPane.rowIndex="1">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets left="150.0" top="120.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </DatePicker>[m
+             <TextField fx:id="txtUsernameSignIn" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="180.0" left="150.0" right="150.0" />[m
+[32m+[m[32m                  <Insets bottom="220.0" left="150.0" right="150.0" />[m
+                </GridPane.margin>[m
+             </TextField>[m
+             <PasswordField fx:id="txtPasswordSignIn" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="120.0" left="150.0" right="150.0" />[m
+[32m+[m[32m                  <Insets bottom="160.0" left="150.0" right="150.0" />[m
+                </GridPane.margin>[m
+             </PasswordField>[m
+             <TextField fx:id="txtImageRoute" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets bottom="60.0" left="150.0" right="150.0" />[m
+[32m+[m[32m                  <Insets bottom="100.0" left="150.0" right="150.0" />[m
+                </GridPane.margin>[m
+             </TextField>[m
+[31m-            <Button mnemonicParsing="false" onAction="#browseImageRoute" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Browse" textFill="WHITE" GridPane.rowIndex="1">[m
+[31m-               <opaqueInsets>[m
+[31m-                  <Insets />[m
+[31m-               </opaqueInsets>[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets bottom="60.0" left="325.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </Button>[m
+[31m-            <ChoiceBox fx:id="cbFavoriteBrowser" prefWidth="150.0" GridPane.rowIndex="1">[m
+[31m-               <GridPane.margin>[m
+[31m-                  <Insets left="150.0" top="180.0" />[m
+[31m-               </GridPane.margin>[m
+[31m-            </ChoiceBox>[m
+             <RadioButton mnemonicParsing="false" text="Male" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="150.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="150.0" />[m
+                </GridPane.margin>[m
+                <toggleGroup>[m
+                   <ToggleGroup fx:id="genderSelect" />[m
+[36m@@ -121,19 +93,57 @@[m
+             </RadioButton>[m
+             <RadioButton mnemonicParsing="false" text="Female" toggleGroup="$genderSelect" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="220.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="220.0" />[m
+                </GridPane.margin>[m
+             </RadioButton>[m
+             <RadioButton mnemonicParsing="false" text="Other" toggleGroup="$genderSelect" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+[31m-                  <Insets left="290.0" />[m
+[32m+[m[32m                  <Insets bottom="40.0" left="290.0" />[m
+                </GridPane.margin>[m
+             </RadioButton>[m
+[31m-            <CheckBox mnemonicParsing="false" text="Software System Engenierie" GridPane.rowIndex="1">[m
+[32m+[m[32m            <CheckBox mnemonicParsing="false" text="Software Engineering" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="20.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </CheckBox>[m
+[32m+[m[32m            <DatePicker fx:id="txtBirthday" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="160.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </DatePicker>[m
+[32m+[m[32m            <ChoiceBox fx:id="cbFavoriteBrowser" prefWidth="150.0" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="220.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </ChoiceBox>[m
+[32m+[m[32m            <Button mnemonicParsing="false" onAction="#browseImageRoute" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Browse" textFill="WHITE" GridPane.rowIndex="1">[m
+[32m+[m[32m               <opaqueInsets>[m
+[32m+[m[32m                  <Insets />[m
+[32m+[m[32m               </opaqueInsets>[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets bottom="100.0" left="325.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </Button>[m
+[32m+[m[32m            <Button mnemonicParsing="false" onAction="#showScreenLogIn" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Log In" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets right="80.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </Button>[m
+[32m+[m[32m            <Button mnemonicParsing="false" onAction="#accountCreate" prefWidth="100.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Create Account" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="80.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </Button>[m
+[32m+[m[32m            <CheckBox mnemonicParsing="false" text="Telematic Engineering" GridPane.rowIndex="1">[m
+                <GridPane.margin>[m
+                   <Insets left="150.0" top="60.0" />[m
+                </GridPane.margin>[m
+             </CheckBox>[m
+[32m+[m[32m            <CheckBox mnemonicParsing="false" text="Industrial Engineering" GridPane.rowIndex="1">[m
+[32m+[m[32m               <GridPane.margin>[m
+[32m+[m[32m                  <Insets left="150.0" top="100.0" />[m
+[32m+[m[32m               </GridPane.margin>[m
+[32m+[m[32m            </CheckBox>[m
+          </children>[m
+       </GridPane>[m
+    </children>[m
