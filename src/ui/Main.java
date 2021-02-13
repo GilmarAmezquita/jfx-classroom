@@ -12,17 +12,13 @@ import model.Classroom;
 public class Main extends Application {
 	private ClassroomGUI classroomGUI;
 	private Classroom classroom;
-	
 	public Main() {
 		classroom = new Classroom();
 		classroomGUI = new ClassroomGUI(classroom);
 	}
-	
-	
 	public static void main(String[] args) {
 		launch(args);
 	}
-	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-pane.fxml"));
@@ -33,5 +29,6 @@ public class Main extends Application {
 		primaryStage.setTitle("Classroom");
 		primaryStage.setResizable(false);
 		primaryStage.show();
+		classroomGUI.showScreenLogIn(null);
 	}
 }

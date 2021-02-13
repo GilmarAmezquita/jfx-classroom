@@ -47,10 +47,10 @@ public class ClassroomGUI {
     
 	private Classroom classroom;
     
-	public ClassroomGUI(Classroom classroom) {
+	public ClassroomGUI(Classroom classroom){
 		this.classroom = classroom;
 	}
-	
+    
     @FXML
     public void showScreenLogIn(ActionEvent event) throws IOException {
     	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
@@ -105,19 +105,21 @@ public class ClassroomGUI {
     }
 
     @FXML
-    public void accountCreate(ActionEvent event) {
-    	boolean createAcc = checkFormEmpty();
+    public void accountCreate(ActionEvent event) throws IOException {
+    	boolean createAcc = checkForEmpty();
+    	boolean created = false;
     	if(createAcc) {
     		String username = txtUsernameSignIn.getText();
     		String password = txtPasswordSignIn.getText();
     		String gender = ((RadioButton) genderSelect.getSelectedToggle()).getText();
     		String birthday = txtBirthday.getValue().toString();
     		String browser = cbFavoriteBrowser.getValue().toString();
-    		classroom.createAccount(username, password, null, null, birthday, browser);
+    		created = classroom.createAccount(username, password, gender, null, birthday, browser);
+    		alertAccount(created);
     	}
     }
     
-    private boolean checkFormEmpty() {
+    private boolean checkForEmpty() {
     	boolean create = true;
     	Alert emptyAlert  =new Alert(AlertType.INFORMATION);
     	emptyAlert.setTitle("Missing Information");
@@ -126,14 +128,43 @@ public class ClassroomGUI {
     		create = false;
     		emptyAlert.setContentText("Username is missing");
     		emptyAlert.showAndWait();
-    	}else if() {
-    		
+    	}else if(txtPasswordSignIn.getText().isEmpty()) {
+    		create = false;
+    		emptyAlert.setContentText("Password is missing");
+    		emptyAlert.showAndWait();		
+    	}else if(genderSelect.getSelectedToggle() ==null) {
+    		create = false;
+    		emptyAlert.setContentText("Gender is missing");
+    		emptyAlert.showAndWait();
+    	}else if(txtBirthday.getValue() == null) {
+    		create = false;
+    		emptyAlert.setContentText("Birthday is missing");
+    		emptyAlert.showAndWait();
+    	}else if(cbFavoriteBrowser.getValue() == null) {
+    		create = false;
+    		emptyAlert.setContentText("Favorite Browser is missing");
+    		emptyAlert.showAndWait();
     	}
     	return create;
     }
+    
+    private void alertAccount(boolean created) throws IOException{
+    	Alert alertCreated = new Alert(AlertType.INFORMATION);
+    	alertCreated.setHeaderText(null);
+    	if(created) {
+    		alertCreated.setTitle("Account created");
+    		alertCreated.setContentText("The new account has been created");
+    		showScreenLogIn(null);
+    	}else {
+    		alertCreated.setTitle("Validation Error");
+    		alertCreated.setContentText("Username Already exist");
+    		txtPasswordSignIn.setText(null);
+    	}
+    	alertCreated.showAndWait();
+    }
 
     @FXML
-    void browseImageRoute(ActionEvent event) {
+    public void browseImageRoute(ActionEvent event) {
 
     }
 }
