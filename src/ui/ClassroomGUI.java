@@ -171,19 +171,19 @@ public class ClassroomGUI {
     }    
     
     @FXML
-    void selectedSoftware(ActionEvent event) {
+    public void selectedSoftware(ActionEvent event) {
     	cbTelematicEng.setSelected(false);
     	cbIndustrialEng.setSelected(false);
     }
     
     @FXML
-    void selectedTelematic(ActionEvent event) {
+    public void selectedTelematic(ActionEvent event) {
     	cbSoftwareEng.setSelected(false);
     	cbIndustrialEng.setSelected(false);
     }
     
     @FXML
-    void selectedIndustrial(ActionEvent event) {
+    public void selectedIndustrial(ActionEvent event) {
     	cbSoftwareEng.setSelected(false);
     	cbTelematicEng.setSelected(false);
     }
@@ -281,7 +281,7 @@ public class ClassroomGUI {
     }
     
     @FXML
-    void accountLogOut(ActionEvent event) throws IOException {
+    public void accountLogOut(ActionEvent event) throws IOException {
     	showScreenLogIn(null);
     }
 }

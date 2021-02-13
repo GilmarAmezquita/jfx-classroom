@@ -33,14 +33,14 @@ public class Classroom {
 			}
 		}
 		i--;
-		return accounts.get(i).getImageRute();
+		return accounts.get(i).getImageRoute();
 	}
 	
-	public boolean createAccount(String username, String password, String imageRute, String gender, String career, String bDay, String favBrowser) {
+	public boolean createAccount(String username, String password, String imageRoute, String gender, String career, String bDay, String favBrowser) {
 		boolean finded = searchAccount(username);
 		boolean added = false;
 		if(!finded) {
-			UserAccount newUserAccount = new UserAccount(username, password,imageRute, gender, career, bDay, favBrowser);
+			UserAccount newUserAccount = new UserAccount(username, password,imageRoute, gender, career, bDay, favBrowser);
 			accounts.add(newUserAccount);
 			added = true;
 		}

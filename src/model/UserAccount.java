@@ -3,16 +3,16 @@ package model;
 public class UserAccount {
 	private String username;
 	private String password;
-	private String imageRute;
+	private String imageRoute;
 	private String gender;
 	private String career;
 	private String birthday;
 	private String browser;
 	
-	public UserAccount(String username, String password, String imageRute,String gender, String career, String bDay, String favBrowser) {
+	public UserAccount(String username, String password, String imageRoute,String gender, String career, String bDay, String favBrowser) {
 		this.username = username;
 		this.password = password;
-		this.imageRute = imageRute;
+		this.imageRoute = imageRoute;
 		this.gender = gender;
 		this.career = career;
 		birthday = bDay;
@@ -25,8 +25,8 @@ public class UserAccount {
 	public String getPassword() {
 		return password;
 	}
-	public String getImageRute() {
-		return imageRute;
+	public String getImageRoute() {
+		return imageRoute;
 	}
 	public String getGender() {
 		return gender;
