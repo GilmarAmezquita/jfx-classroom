@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="400.0" prefHeight="300.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="400.0" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane VBox.vgrow="ALWAYS">
         <columnConstraints>
@@ -33,17 +33,17 @@
             </Label>
             <Label text="Username:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="50.0" left="40.0" />
+                  <Insets bottom="50.0" left="80.0" />
                </GridPane.margin>
             </Label>
             <Label text="Password:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="40.0" top="50.0" />
+                  <Insets left="80.0" top="50.0" />
                </GridPane.margin>
             </Label>
             <TextField fx:id="txtUsernameLogIn" alignment="BOTTOM_LEFT" prefWidth="100.0" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="50.0" left="100.0" right="50.0" />
+                  <Insets bottom="50.0" left="150.0" right="150.0" />
                </GridPane.margin>
             </TextField>
             <Button mnemonicParsing="false" onAction="#showScreenSignUp" prefWidth="70.0" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Sign Up" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
@@ -58,7 +58,7 @@
             </Button>
             <PasswordField fx:id="txtPasswordLogIn" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="100.0" right="50.0" top="50.0" />
+                  <Insets left="150.0" right="150.0" top="50.0" />
                </GridPane.margin>
             </PasswordField>
          </children>
