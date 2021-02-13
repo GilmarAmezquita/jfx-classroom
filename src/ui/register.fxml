@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane VBox.vgrow="ALWAYS">
         <columnConstraints>
@@ -35,57 +35,57 @@
             </Label>
             <Label text="Username:" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <GridPane.margin>
-                  <Insets bottom="220.0" left="50.0" />
+                  <Insets bottom="220.0" left="100.0" />
                </GridPane.margin>
             </Label>
             <Label text="Password:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="160.0" left="50.0" />
+                  <Insets bottom="160.0" left="100.0" />
                </GridPane.margin>
             </Label>
             <Label text="Profile Photo:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="100.0" left="50.0" />
+                  <Insets bottom="100.0" left="100.0" />
                </GridPane.margin>
             </Label>
             <Label text="Gender:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="40.0" left="50.0" />
+                  <Insets bottom="40.0" left="100.0" />
                </GridPane.margin>
             </Label>
             <Label text="Career:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="50.0" top="20.0" />
+                  <Insets left="100.0" top="20.0" />
                </GridPane.margin>
             </Label>
             <Label text="Birthday:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="50.0" top="160.0" />
+                  <Insets left="100.0" top="160.0" />
                </GridPane.margin>
             </Label>
             <Label text="Favorite Browser:" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="50.0" top="220.0" />
+                  <Insets left="100.0" top="220.0" />
                </GridPane.margin>
             </Label>
             <TextField fx:id="txtUsernameSignIn" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="220.0" left="150.0" right="150.0" />
+                  <Insets bottom="220.0" left="200.0" right="150.0" />
                </GridPane.margin>
             </TextField>
             <PasswordField fx:id="txtPasswordSignIn" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="160.0" left="150.0" right="150.0" />
+                  <Insets bottom="160.0" left="200.0" right="150.0" />
                </GridPane.margin>
             </PasswordField>
             <TextField fx:id="txtImageRoute" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="100.0" left="150.0" right="150.0" />
+                  <Insets bottom="100.0" left="200.0" right="150.0" />
                </GridPane.margin>
             </TextField>
             <RadioButton mnemonicParsing="false" text="Male" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="40.0" left="150.0" />
+                  <Insets bottom="40.0" left="200.0" />
                </GridPane.margin>
                <toggleGroup>
                   <ToggleGroup fx:id="genderSelect" />
@@ -93,27 +93,37 @@
             </RadioButton>
             <RadioButton mnemonicParsing="false" text="Female" toggleGroup="$genderSelect" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="40.0" left="220.0" />
+                  <Insets bottom="40.0" left="270.0" />
                </GridPane.margin>
             </RadioButton>
             <RadioButton mnemonicParsing="false" text="Other" toggleGroup="$genderSelect" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets bottom="40.0" left="290.0" />
+                  <Insets bottom="40.0" left="340.0" />
                </GridPane.margin>
             </RadioButton>
-            <CheckBox mnemonicParsing="false" text="Software Engineering" GridPane.rowIndex="1">
+            <CheckBox fx:id="cbSoftwareEng" mnemonicParsing="false" onAction="#selectedSoftware" text="Software Engineering" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="150.0" top="20.0" />
+                  <Insets left="200.0" top="20.0" />
+               </GridPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="cbTelematicEng" mnemonicParsing="false" onAction="#selectedTelematic" text="Telematic Engineering" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="200.0" top="60.0" />
+               </GridPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="cbIndustrialEng" mnemonicParsing="false" onAction="#selectedIndustrial" text="Industrial Engineering" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="200.0" top="100.0" />
                </GridPane.margin>
             </CheckBox>
             <DatePicker fx:id="txtBirthday" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="150.0" top="160.0" />
+                  <Insets left="200.0" top="160.0" />
                </GridPane.margin>
             </DatePicker>
             <ChoiceBox fx:id="cbFavoriteBrowser" prefWidth="150.0" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="150.0" top="220.0" />
+                  <Insets left="200.0" top="220.0" />
                </GridPane.margin>
             </ChoiceBox>
             <Button mnemonicParsing="false" onAction="#browseImageRoute" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Browse" textFill="WHITE" GridPane.rowIndex="1">
@@ -121,7 +131,7 @@
                   <Insets />
                </opaqueInsets>
                <GridPane.margin>
-                  <Insets bottom="100.0" left="325.0" />
+                  <Insets bottom="100.0" left="460.0" />
                </GridPane.margin>
             </Button>
             <Button mnemonicParsing="false" onAction="#showScreenLogIn" style="-fx-background-color: #81D0EE; -fx-border-color: black;" text="Log In" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
@@ -134,16 +144,6 @@
                   <Insets left="80.0" />
                </GridPane.margin>
             </Button>
-            <CheckBox mnemonicParsing="false" text="Telematic Engineering" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets left="150.0" top="60.0" />
-               </GridPane.margin>
-            </CheckBox>
-            <CheckBox mnemonicParsing="false" text="Industrial Engineering" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets left="150.0" top="100.0" />
-               </GridPane.margin>
-            </CheckBox>
          </children>
       </GridPane>
    </children>
